@@ -6,7 +6,7 @@
           <div class="flex items-center gap-[10px] mb-[68px]">
             <div class="w-[78px] h-[76px]">
               <img
-                src="../assets/egnlogo.png"
+                src="../assets/images/egnlogo.png"
                 alt="Logo"
                 class="w-full h-full object-cover object-center"
               />

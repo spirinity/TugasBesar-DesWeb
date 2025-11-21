@@ -1,17 +1,13 @@
 <template>
   <section class="bg-[#efe3cf] py-20 px-6 md:px-12">
     <div class="text-center mb-12">
-      <div
-        class="inline-block bg-black text-white px-10 py-3 text-[36px] italic font-['Times_New_Roman'] rounded-sm shadow"
-      >
-        Lokasi Kami
-      </div>
+      <HeaderBanner title="Lokasi Kami" fill-color="#000000" />
     </div>
 
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
       <div class="border border-[#4b4637] rounded-[15px] overflow-hidden shadow-md">
         <img
-          src="../assets/GedungLKBH.jpeg"
+          src="@/assets/images/gedunglkbh.jpeg"
           class="w-full h-[300px] md:h-[360px] object-cover"
           alt="Gedung LKBH Elsa Garda Indonesia"
         />
@@ -62,4 +58,6 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+import HeaderBanner from '@/components/HeaderBanner.vue'
+</script>

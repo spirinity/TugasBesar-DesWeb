@@ -1,6 +1,6 @@
 <script setup>
-import ContactHero from '@/components/ContactHero.vue'
-import LokasiSection from '@/components/LokasiSection.vue'
+import ContactHero from '@/components/sections/contact/ContactHero.vue'
+import LokasiSection from '@/components/sections/tentang/LokasiTentang.vue'
 </script>
 
 <template>
