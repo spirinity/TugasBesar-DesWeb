@@ -2,11 +2,17 @@
   <section class="bg-cream py-20 px-6 md:px-12">
     <div class="max-w-7xl mx-auto">
       <!-- HEADER -->
-      <HeaderBanner title="Proses Layanan" fill-color="#EAB308" stroke-color="#7a5f00" />
+      <HeaderBanner
+        title="Proses Layanan"
+        fill-color="#000000"
+        stroke-color="#000000"
+        width="450"
+        height="100"
+      />
 
       <!-- SUBTITLE -->
       <p
-        class="font-jakarta text-[20px] md:text-[24px] text-text-gray tracking-[-0.96px] leading-[1.037] text-center max-w-3xl mx-auto mb-16"
+        class="font-jakarta text-[20px] md:text-[24px] text-text-gray tracking-[-0.96px] leading-[1.037] text-center max-w-3xl mx-auto mb-25"
       >
         Proses pelayanan kami dirancang untuk memberikan kemudahan dan kepastian kepada klien dalam
         setiap tahapannya.
@@ -21,7 +27,8 @@
         >
           <!-- Step Number -->
           <div
-            class="w-20 h-20 rounded-full bg-primary flex items-center justify-center mb-6 border-[3px] border-border-dark"
+            class="w-20 h-20 rounded-full flex items-center justify-center mb-6"
+            :style="{ backgroundColor: step.color }"
           >
             <span class="font-times italic text-[36px] text-cream font-bold">{{ index + 1 }}</span>
           </div>
@@ -49,20 +56,24 @@ const steps = [
     title: 'Konsultasi Awal',
     description:
       'Diskusi awal untuk memahami permasalahan hukum Anda dan memberikan arahan solusi yang tepat.',
+    color: '#05356B', // primary blue
   },
   {
     title: 'Analisis Kasus',
     description:
       'Tim kami menganalisis kasus secara mendalam dan menyusun strategi penanganan yang optimal.',
+    color: '#C41E3A', // red
   },
   {
     title: 'Pendampingan',
     description: 'Pendampingan penuh selama proses hukum berlangsung dari awal hingga selesai.',
+    color: '#FFD700', // yellow/gold
   },
   {
     title: 'Penyelesaian',
     description:
       'Finalisasi kasus dengan solusi terbaik dan dokumentasi lengkap untuk kepentingan Anda.',
+    color: '#000000', // black
   },
 ]
 </script>

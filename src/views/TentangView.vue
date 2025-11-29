@@ -9,5 +9,5 @@ import VisiMisiTentang from '@/components/sections/tentang/VisiMisiTentang.vue'
   <HeroTentang />
   <SejarahTentang />
   <VisiMisiTentang />
-  <!-- <LokasiTentang /> -->
+  <LokasiTentang />
 </template>

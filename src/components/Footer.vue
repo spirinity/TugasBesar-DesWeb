@@ -19,7 +19,11 @@
           </div>
 
           <div class="flex gap-[10px]">
-            <div class="w-6 h-6 shrink-0 mt-1"></div>
+            <img
+              src="@/assets/icons/pin.png"
+              alt="Alamat"
+              class="w-6 h-6 object-contain shrink-0 mt-1"
+            />
             <p
               class="font-['Plus_Jakarta_Sans'] text-[16px] text-[#e3d7c0] leading-[1.037] tracking-[-0.64px]"
             >
@@ -29,7 +33,11 @@
           </div>
           <!-- Email -->
           <div class="flex gap-[10px] items-center">
-            <div class="w-6 h-6 shrink-0"></div>
+            <img
+              src="@/assets/icons/message.png"
+              alt="Email"
+              class="w-6 h-6 object-contain shrink-0"
+            />
             <a
               href="mailto:indobesia@gmail.com"
               class="font-['Plus_Jakarta_Sans'] text-[16px] text-[#e3d7c0] tracking-[-0.64px] leading-[1.037] hover:underline"
@@ -39,7 +47,11 @@
           </div>
 
           <div class="flex gap-[10px] items-center">
-            <div class="w-6 h-6 shrink-0"></div>
+            <img
+              src="@/assets/icons/call.png"
+              alt="Telepon"
+              class="w-6 h-6 object-contain shrink-0"
+            />
             <p
               class="font-['Plus_Jakarta_Sans'] text-[16px] text-[#e3d7c0] tracking-[-0.64px] leading-[1.037]"
             >
@@ -70,7 +82,11 @@
           </h3>
           <div class="space-y-[37px] pl-10">
             <div class="flex gap-[7px] items-center">
-              <div class="w-6 h-6 shrink-0"></div>
+              <img
+                src="@/assets/vector/vectorfacebook.svg"
+                alt="Facebook"
+                class="w-6 h-6 object-contain shrink-0"
+              />
               <a
                 href="#"
                 class="font-['Plus_Jakarta_Sans'] text-[16px] text-[#e3d7c0] leading-[1.4] hover:underline"
@@ -80,7 +96,11 @@
             </div>
 
             <div class="flex gap-[7px] items-center">
-              <div class="w-6 h-6 shrink-0"></div>
+              <img
+                src="@/assets/vector/vectorinstagram.svg"
+                alt="Instagram"
+                class="w-6 h-6 object-contain shrink-0"
+              />
               <a
                 href="#"
                 class="font-['Plus_Jakarta_Sans'] text-[16px] text-[#e3d7c0] leading-[1.4] hover:underline"
@@ -90,7 +110,11 @@
             </div>
 
             <div class="flex gap-[7px] items-center">
-              <div class="w-6 h-6 shrink-0"></div>
+              <img
+                src="@/assets/vector/vectorlinkedin.svg"
+                alt="LinkedIn"
+                class="w-6 h-6 object-contain shrink-0"
+              />
               <a
                 href="#"
                 class="font-['Plus_Jakarta_Sans'] text-[16px] text-[#e3d7c0] leading-[1.4] hover:underline"

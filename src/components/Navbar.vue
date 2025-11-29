@@ -21,7 +21,7 @@
 
         <RouterLink to="layanan" class="nav-link no-underline text-black"> Layanan </RouterLink>
 
-        <RouterLink to="" class="nav-link no-underline text-black"> FAQ </RouterLink>
+        <RouterLink to="/edukasi" class="nav-link no-underline text-black"> Edukasi </RouterLink>
       </div>
 
       <div class="shrink-0">
@@ -56,11 +56,18 @@ onUnmounted(() => {
 
 <style scoped>
 .nav-link {
-  font-weight: 400;
-  transition: font-weight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: 'Times New Roman', serif;
+  transition:
+    text-shadow 0.25s ease,
+    transform 0.25s ease,
+    color 0.25s ease;
 }
 
 .nav-link:hover {
-  font-weight: 700;
+  text-shadow:
+    0px 0px 1px rgba(0, 0, 0, 0.5),
+    0px 0px 1px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  color: #000000;
 }
 </style>
