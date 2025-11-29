@@ -26,7 +26,7 @@
 
           <!-- Address -->
           <div class="flex items-start gap-4">
-            <img :src="pinIcon" alt="Location" class="w-8 h-8 flex-shrink-0 object-contain" />
+            <img src="@/assets/vector/vectorpin.svg" alt="Location" class="w-8 h-8 flex-shrink-0 object-contain" />
             <p class="font-jakarta text-[20px] text-text-gray leading-tight tracking-[-0.96px]">
               Gedung Wiratama, Jln. Harmonika No. 49, Kelurahan Sidodamai, Kecamatan Samarinda Ilir,
               Kota Samarinda, Kalimantan Timur, 75128

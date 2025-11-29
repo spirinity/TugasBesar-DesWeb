@@ -2,7 +2,7 @@
   <section class="bg-cream min-h-screen flex items-center py-16 md:py-20">
     <div class="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-16">
       <!-- HEADER SECTION -->
-      <div class="space-y-8 mb-9 lg:mb-0">
+      <div class="space-y-1 mb-0 lg:mb-0">
         <!-- MAIN TITLE -->
         <h1
           class="font-times italic text-[64px] md:text-[80px] lg:text-[86px] text-black leading-tight tracking-[-3.84px] text-center lg:text-left"

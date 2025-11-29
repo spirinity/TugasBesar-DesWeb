@@ -3,7 +3,7 @@
     <div class="max-w-[1440px] mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-[52px]">
         <div class="space-y-[17px]">
-          <div class="flex items-center gap-[10px] mb-[68px]">
+          <div class="flex items-center gap-[10px] mb-7">
             <div class="w-[78px] h-[76px]">
               <img
                 src="../assets/images/egnlogo.png"
@@ -19,8 +19,9 @@
           </div>
 
           <div class="flex gap-[10px]">
+            <!-- Pin Icon -->
             <img
-              src="@/assets/icons/pin.png"
+              src="@/assets/vector/vectorpin.svg"
               alt="Alamat"
               class="w-6 h-6 object-contain shrink-0 mt-1"
             />
@@ -33,8 +34,9 @@
           </div>
           <!-- Email -->
           <div class="flex gap-[10px] items-center">
+            <!-- Mail Icon -->
             <img
-              src="@/assets/icons/message.png"
+              src="@/assets/vector/vectoremail.svg"
               alt="Email"
               class="w-6 h-6 object-contain shrink-0"
             />
@@ -47,8 +49,9 @@
           </div>
 
           <div class="flex gap-[10px] items-center">
+            <!-- Phone Icon -->
             <img
-              src="@/assets/icons/call.png"
+              src="@/assets/vector/vectorcall.svg"
               alt="Telepon"
               class="w-6 h-6 object-contain shrink-0"
             />
@@ -129,7 +132,7 @@
       <div class="border-t border-[#e3d7c0] mb-6"></div>
 
       <div>
-        <p class="font-['Arial'] text-[18px] text-[#f3eee5] leading-[1.4]">
+        <p class="font-['Plus_Jakarta_Sans'] text-[18px] text-[#f3eee5] leading-[1.4]">
           Copyright © 2025 Elsa Garda Nusantara
         </p>
       </div>

@@ -2,7 +2,7 @@
   <section class="bg-cream min-h-screen flex items-center py-16 md:py-20">
     <div class="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-16">
       <!-- SEJARAH KAMI HEADER BANNER -->
-      <div class="mb-12 lg:mb-16 w-full text-center lg:text-right">
+      <div class="mb-0 lg:mb-4 w-full text-center lg:text-right">
         <HeaderBanner
           title="Sejarah Kami"
           fill-color="#DFD600"
@@ -28,9 +28,9 @@
             class="border-[3px] border-[#424242] rounded-[15px] bg-transparent px-6 py-50 md:px-[23px] md:py-[10px]"
           >
             <div
-              class="font-jakarta text-[20px] leading-[1.037] text-[#343434] space-y-4 text-justify"
+              class="font-jakarta text-[20px] leading-[1.037] text-[#343434] space-y-2 text-justify"
             >
-              <p class="mb-0">
+              <p class="mb-3">
                 <span class="font-normal"
                   >Elsa Garda Indonesia berdiri sebagai lembaga konsultasi dan bantuan hukum yang
                   berkomitmen untuk menghadirkan akses keadilan bagi seluruh masyarakat
