@@ -3,14 +3,14 @@
     <div class="max-w-7xl mx-auto">
       <!-- TITLE -->
       <h2
-        class="font-times italic text-[64px] text-black tracking-[-2.56px] leading-[1.037] text-center mb-4"
+        class="font-times italic text-[40px] md:text-[64px] text-black tracking-[-1px] md:tracking-[-2.56px] leading-[1.037] text-center mb-4"
       >
         Layanan Kami
       </h2>
 
       <!-- SUBTITLE -->
       <p
-        class="font-jakarta text-[24px] text-text-gray tracking-[-0.96px] leading-[1.037] text-center max-w-[932px] mx-auto mb-16"
+        class="font-jakarta text-[16px] md:text-[24px] text-text-gray tracking-[-0.5px] md:tracking-[-0.96px] leading-[1.4] md:leading-[1.037] text-center max-w-[932px] mx-auto mb-16"
       >
         Elsa Garda Indonesia melayani dua layanan hukum yang berfokus pada pemberian solusi
         berintegritas bagi masyarakat yang membutuhkan pendampingan hukum.
