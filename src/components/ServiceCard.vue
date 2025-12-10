@@ -23,14 +23,14 @@
 
     <!-- Title -->
     <h3
-      class="font-times italic text-[36px] text-black tracking-[-1.44px] leading-[1.037] text-center mb-8 transition-colors duration-300"
+      class="font-times italic text-[28px] md:text-[36px] text-black tracking-[-1px] md:tracking-[-1.44px] leading-[1.037] text-center mb-8 transition-colors duration-300"
       :class="{ 'group-hover:text-cream': !disableHover }"
       v-html="title"
     ></h3>
 
     <!-- Description -->
     <p
-      class="font-jakarta text-[24px] text-text-muted tracking-[-0.96px] leading-[1.037] text-center transition-colors duration-300"
+      class="font-jakarta text-[16px] md:text-[24px] text-text-muted tracking-[-0.5px] md:tracking-[-0.96px] leading-[1.4] md:leading-[1.037] text-center transition-colors duration-300"
       :class="{ 'group-hover:text-cream': !disableHover }"
     >
       {{ description }}
