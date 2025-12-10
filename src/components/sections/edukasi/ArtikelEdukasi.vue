@@ -1,16 +1,7 @@
 <template>
-  <section class="bg-cream px-6 md:px-12 py-16">
-    <!-- Show Article Detail View -->
-    <ArtikelDetail
-      v-if="selectedArticle"
-      :article="selectedArticle"
-      :related-articles="relatedArticles"
-      @back="selectedArticle = null"
-      @select-article="selectArticleById"
-    />
-
-    <!-- Show Article List View -->
-    <div v-else>
+  <section id="artikel-section" class="bg-cream px-6 md:px-12 py-16">
+    <!-- Article List View -->
+    <div>
       <div class="mb-10">
         <h2 class="font-times italic text-[56px] tracking-[-2px] text-black mb-2">
           Artikel & Materi
@@ -64,7 +55,6 @@
         </div>
       </div>
 
-      <!-- Articles Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ArticleCard
           v-for="art in filteredArticles"
@@ -80,11 +70,12 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import ArtikelDetail from '../../ArtikelDetail.vue'
+import { useRouter } from 'vue-router'
 import FilterButton from '../../FilterButton.vue'
 import ArticleCard from '../../ArticleCard.vue'
 import { articlesData as articlesDataImport } from '@/data/articlesData.js'
 
+const router = useRouter()
 const articlesData = ref(articlesDataImport)
 
 const categories = ref([
@@ -98,7 +89,6 @@ const categories = ref([
 ])
 const activeCategory = ref('Semua')
 const search = ref('')
-const selectedArticle = ref(null)
 
 const filteredArticles = computed(() => {
   return articlesData.value.filter((a) => {
@@ -110,20 +100,7 @@ const filteredArticles = computed(() => {
   })
 })
 
-const relatedArticles = computed(() => {
-  if (!selectedArticle.value) return []
-
-  return articlesData.value
-    .filter(
-      (a) =>
-        a.id !== selectedArticle.value.id &&
-        (a.category === selectedArticle.value.category || Math.random() > 0.5),
-    )
-    .slice(0, 2)
-})
-
 function selectArticleById(id) {
-  selectedArticle.value = articlesData.value.find((a) => a.id === id)
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  router.push({ name: 'artikel-detail', params: { id } })
 }
 </script>

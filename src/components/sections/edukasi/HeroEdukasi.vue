@@ -39,6 +39,7 @@
 
         <div class="flex flex-wrap gap-4">
           <button
+            @click="scrollToArtikel"
             class="mt-[10px] px-8 h-[45px] border border-primary border-solid rounded-[15px] bg-transparent font-times font-bold italic text-[28px] text-primary hover:bg-primary hover:text-cream transition-all duration-300"
           >
             Mulai Membaca
@@ -64,3 +65,12 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const scrollToArtikel = () => {
+  const element = document.getElementById('artikel-section');
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+</script>

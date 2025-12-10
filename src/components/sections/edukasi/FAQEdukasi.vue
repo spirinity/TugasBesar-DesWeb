@@ -10,8 +10,7 @@
             Frequently Asked Questions
           </h2>
         </div>
-
-        <!-- FAQ Items -->
+        
         <div class="flex flex-col gap-4">
           <FAQItem
             v-for="(item, index) in faqItems"
