@@ -1,10 +1,8 @@
 <template>
   <section class="bg-cream py-20 px-6 md:px-12">
     <div class="max-w-7xl mx-auto">
-      <!-- HEADER WITH BACKGROUND -->
       <HeaderBanner title="Visi & Misi" fill-color="#B91C1C" stroke-color="#B91C1C" />
 
-      <!-- SUBTITLE -->
       <p
         class="font-jakarta text-[20px] md:text-[24px] text-text-gray tracking-[-0.96px] leading-[1.037] text-center max-w-[932px] mx-auto mb-16"
       >
@@ -12,7 +10,6 @@
         berintegritas bagi masyarakat yang membutuhkan pendampingan hukum.
       </p>
 
-      <!-- VISI & MISI GRID -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[948px] mx-auto">
         <ServiceCard
           v-for="(item, index) in visiMisi"
