@@ -2,15 +2,17 @@
   <section class="bg-cream py-20 px-6 md:px-12">
     <div class="max-w-7xl mx-auto">
       <!-- Header Section -->
-      <div class="flex mb-12">
-        <div class="border-[3px] border-border-dark rounded-[15px] px-12 py-6 w-fit ">
+      <div class="flex mb-8 md:mb-12 justify-center md:justify-start">
+        <div
+          class="border-[3px] border-border-dark rounded-[15px] px-6 py-6 md:px-12 md:py-6 w-full md:w-fit text-center md:text-left"
+        >
           <h2
-            class="font-times italic text-[64px] text-black tracking-[-2.56px] leading-tight whitespace-nowrap"
+            class="font-times italic text-[40px] md:text-[64px] text-black tracking-[-1px] md:tracking-[-2.56px] leading-tight"
           >
             Layanan
           </h2>
           <h3
-            class="font-jakarta font-bold italic text-[48px] text-primary tracking-[-2.88px] leading-tight whitespace-nowrap"
+            class="font-jakarta font-bold italic text-[24px] md:text-[48px] text-primary tracking-[-1px] md:tracking-[-2.88px] leading-tight"
           >
             Advokasi & Bantuan Pro Bono
           </h3>
@@ -18,38 +20,27 @@
       </div>
 
       <!-- Services Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mb-12">
-        <div
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-3 mb-12">
+        <ServiceCardGrid
           v-for="(service, index) in services"
           :key="index"
-          class="border-[3px] border-border-dark rounded-[15px] p-4 flex flex-col items-center"
-        >
-          <!-- Service Title -->
-          <h4
-            class="font-times italic text-[32px] text-black text-center tracking-[-1.28px] leading-tight mb-8"
-          >
-            {{ service.title }}
-          </h4>
-
-          <!-- Service Description -->
-          <p
-            class="font-jakarta text-[23px] text-[#343434] text-center tracking-[-0.96px] leading-tight"
-          >
-            {{ service.description }}
-          </p>
-        </div>
+          :title="service.title"
+          :description="service.description"
+        />
       </div>
 
       <!-- CTA Button -->
       <div class="flex justify-center">
-        <a href="#contact" class="relative group inline-block" style="width: 392px; height: 75px">
+        <router-link
+          to="/kontak"
+          class="relative group inline-block w-[280px] md:w-[392px] h-[54px] md:h-[75px]"
+        >
           <!-- SVG Ribbon Background -->
           <svg
-            width="392"
-            height="75"
             viewBox="0 0 392 75"
             xmlns="http://www.w3.org/2000/svg"
             class="block w-full h-full"
+            preserveAspectRatio="none"
           >
             <path
               d="M390.924 0.5H0.924316L9.42432 13.5V61.5L0.924316 74.5H390.924L383.592 64.2241V12.5775L390.924 0.5Z"
@@ -62,18 +53,20 @@
           <!-- Button Text -->
           <div class="absolute inset-0 flex items-center justify-center px-4">
             <span
-              class="font-times font-bold italic text-[32px] text-primary group-hover:text-white transition-colors duration-300"
+              class="font-times font-bold italic text-[20px] md:text-[32px] text-primary group-hover:text-white transition-colors duration-300"
             >
               Konsultasi Sekarang
             </span>
           </div>
-        </a>
+        </router-link>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
+import ServiceCardGrid from '@/components/ServiceCardGrid.vue'
+
 const services = [
   {
     title: 'Pendampingan Kasus Ketenagakerjaan',

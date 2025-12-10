@@ -1,7 +1,6 @@
 <template>
   <section class="bg-cream min-h-screen flex items-center py-16 md:py-20">
     <div class="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-16">
-      <!-- HEADER SECTION -->
       <div class="mb-12 lg:mb-16">
         <div
           class="mx-auto max-w-[700px] border-[3px] border-border-dark rounded-[15px] px-3 md:px-7 flex flex-col items-center gap-2"

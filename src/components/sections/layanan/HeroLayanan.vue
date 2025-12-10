@@ -1,13 +1,10 @@
 <template>
   <section class="relative w-full h-screen min-h-[850px] flex items-center justify-center">
-    <!-- Background Image with Overlay -->
     <div class="absolute inset-0 pointer-events-none">
       <img :src="courtroomImage" alt="Courtroom" class="w-full h-full object-cover" />
-      <!-- Cream overlay with 75% opacity -->
       <div class="absolute inset-0 bg-cream opacity-75"></div>
     </div>
 
-    <!-- Content -->
     <div class="relative z-10 flex flex-col items-center justify-center gap-8 md:gap-12 px-6">
       <!-- Title -->
       <h1 class="font-times italic text-6xl md:text-7xl lg:text-8xl text-black text-center">
