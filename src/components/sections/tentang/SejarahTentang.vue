@@ -1,21 +1,28 @@
 <template>
   <section class="bg-cream flex items-center py-12 md:py-16 lg:py-20">
     <div class="max-w-7xl mx-auto w-full px-6 md:px-12 lg:px-16">
-      <div class="mb-4 lg:mb-4 w-full flex justify-center lg:block lg:text-right">
-           <!-- BANNER MOBILE -->
+      <div class="w-full hidden lg:block">
+        <div class="grid grid-cols-12">
+          <div class="col-span-5"></div>
+          <div class="col-span-7 flex">
+            <HeaderBanner
+              title="Sejarah Kami"
+              fill-color="#DFD600"
+              stroke-color="#DFD600"
+              align="right"
+              class="ml-auto"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center lg:hidden mb-4 w-full">
+        <!-- BANNER MOBILE -->
         <HeaderBanner
           title="Sejarah Kami"
           fill-color="#DFD600"
           stroke-color="#DFD600"
           align="center"
-          class="lg:hidden"
-        />
-        <HeaderBanner
-          title="Sejarah Kami"
-          fill-color="#DFD600"
-          stroke-color="#DFD600"
-          align="right"
-          class="hidden lg:block"
         />
       </div>
 
@@ -30,7 +37,7 @@
 
         <div class="lg:col-span-7 order-2">
           <div
-            class="border-[3px] border-[#424242] rounded-[15px] bg-transparent px-4 py-6 md:px-[23px] md:py-[10px]"
+            class="border-[3px] border-[#424242] rounded-[15px] bg-transparent px-4 py-6 md:px-[23px] md:py-[23px]"
           >
             <div
               class="font-jakarta text-[16px] md:text-[20px] leading-[1.4] md:leading-[1.037] text-[#343434] space-y-4 text-justify"
