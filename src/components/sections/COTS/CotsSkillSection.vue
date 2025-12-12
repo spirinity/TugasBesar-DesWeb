@@ -6,13 +6,10 @@
       <div class="relative flex flex-col justify-start gap-4 text-left">
         <div class="flex flex-col justify-start">
           <h1
-            class="text-3xl font-times tracking-tight capitalize text-medium md:text-4xl lg:text-5xl"
+            class="text-3xl font-times tracking-tight capitalize text-center md:text-4xl lg:text-5xl"
           >
-            Mahardika Arka
+            Skills
           </h1>
-          <h2 class="font-jakarta text-primary text-sm tracking-widest uppercase md:text-base">
-            11231037 - Informatika - ITK
-          </h2>
         </div>
         <div
           class="relative grid h-fit w-full grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3"
