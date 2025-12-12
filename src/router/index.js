@@ -5,6 +5,7 @@ import ContactView from '../views/ContactView.vue'
 import LayananView from '../views/LayananView.vue'
 import EdukasiView from '@/views/EdukasiView.vue'
 import ArtikelDetailView from '@/views/ArtikelDetailView.vue'
+import COTSView from '../views/COTSView.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: '/artikel/:id',
       name: 'artikel-detail',
       component: ArtikelDetailView,
+    },
+    {
+      path: '/cots',
+      name: 'cots',
+      component: COTSView,
     },
   ],
 })

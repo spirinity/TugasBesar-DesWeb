@@ -47,6 +47,14 @@
         >
           Edukasi
         </RouterLink>
+
+        <RouterLink
+          to="/cots"
+          class="nav-link no-underline text-black"
+          :class="{ 'font-bold': $route.path === '/cots' }"
+        >
+          Coding On The Spot
+        </RouterLink>
       </div>
 
       <!-- Desktop Contact Button -->
