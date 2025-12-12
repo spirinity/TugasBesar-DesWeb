@@ -16,7 +16,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import ArtikelDetail from '@/components/ArtikelDetail.vue'
+import ArtikelDetail from '@/components/sections/edukasi/ArtikelDetail.vue'
 import { articlesData } from '@/data/articlesData.js'
 
 const route = useRoute()

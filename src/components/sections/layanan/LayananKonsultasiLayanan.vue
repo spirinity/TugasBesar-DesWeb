@@ -88,5 +88,10 @@ const services = [
     description:
       'Terlibat dalam kegiatan advokasi bersama masyarakat sipil untuk memperjuangkan kebijakan yang adil, serta melindungi kelompok rentan dari diskriminasi hukum.',
   },
+  {
+    title: 'Pembelaan Hukum Pidana',
+    description:
+      'Terlibat dalam kegiatan advokasi bersama masyarakat sipil untuk memperjuangkan kebijakan yang adil, serta melindungi kelompok rentan dari diskriminasi hukum.',
+  },
 ]
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="group perspective-1000 h-[500px] ipad-pro:h-[420px]">
     <div
-      class="relative w-full h-full transition-transform duration-700 transform-style-3d group-hover:rotate-y-180"
+      class="relative w-full h-full transition-transform duration-850 transform-style-3d group-hover:rotate-y-180"
     >
       <!-- Front Side -->
       <div
@@ -80,7 +80,7 @@ defineProps({
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Flip Card Utilities */
+/* Flip Card Utilities */x
 .perspective-1000 {
   perspective: 1000px;
 }
