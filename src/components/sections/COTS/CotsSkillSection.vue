@@ -23,7 +23,6 @@
             :title="skill.name"
             :description="skill.desc"
             :icon="skill.icon"
-            disable-hover
           />
         </div>
       </div>
